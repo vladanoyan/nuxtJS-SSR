@@ -105,7 +105,11 @@
                     <span><a href="tel:8778397378">877.8.EXPERT  877.839.7378</a></span>
                 </div>
                 <div class="call-button">
-                    <a href="tel:8778397378"><img src="../static/images/phone.png" alt="phone"></a>
+                    <a href="tel:8778397378">
+                        <no-ssr>
+                            <icon :icon="['fas', 'phone']"/>
+                        </no-ssr>
+                    </a>
                 </div>
             </div>
         </section>

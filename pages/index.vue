@@ -6,13 +6,13 @@
                     <div class="col-lg-6 col-md-6 left-section">
                         <div class="portfolio">
                             <div class="images-big">
-                                <img src="../static/images/Group12@3x.png" alt="J E W E L R Y">
+                                <img id="show-modal" @click="dialogVisible = true" src="../static/images/collection/item-4.png" alt="J E W E L R Y">
                             </div>
                             <div class="images-small">
-                                <img src="../static/images/Group12Copy2@3x.png" alt="J E W E L R Y">
-                                <img src="../static/images/Group12Copy3@3x.png" alt="J E W E L R Y">
-                                <img src="../static/images/Group12Copy4@3x.png" alt="J E W E L R Y">
-                                <img src="../static/images/Group12Copy5@3x.png" alt="J E W E L R Y">
+                                <img id="show-modal" @click="dialogVisible = true" src="../static/images/collection/item-1.png" alt="J E W E L R Y">
+                                <img id="show-modal" @click="dialogVisible = true" src="../static/images/collection/item-2.png" alt="J E W E L R Y">
+                                <img id="show-modal" @click="dialogVisible = true" src="../static/images/collection/item-3.png" alt="J E W E L R Y">
+                                <img id="show-modal" @click="dialogVisible = true" src="../static/images/collection/item-5.png" alt="J E W E L R Y">
                             </div>
                         </div>
                     </div>
@@ -124,18 +124,47 @@
                     </div>
                 </div>
             </div>
+      
+            <no-ssr>
+                <el-dialog
+                title="Portfolio"
+                :visible.sync="dialogVisible"
+                >
+                <!-- <div class="row justify-content-center"> -->
+                    <transition-group name="list" tag="div" class="row justify-content-center">
+                        <div 
+                            class="col collection-container" 
+                            v-for="item in load"
+                            :key="`collection-item-${item}`">
+                            <div class="collection">
+                                <img :src="`/images/collection/item-${item}.png`"/>
+                            </div>
+                        </div>
+                    </transition-group>
+                    <!-- </div> -->
+                    <span slot="footer" class="dialog-footer justify-content-end d-flex"></span>
+                </el-dialog>
+            </no-ssr>
         </section>
     </div>
 </template>
 
 <script>
 import { mapState } from "vuex"
-// import $ from "jquery"
 
+// import $ from "jquery"
 export default {
+  components: {},
+  data() {
+    return {
+      dialogVisible: false,
+      load: 53
+    }
+  },
   computed: {
     ...mapState(["message"])
-  }
+  },
+  methods: {}
 }
 </script>
 

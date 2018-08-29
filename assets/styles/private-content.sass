@@ -1,4 +1,46 @@
 .private-content
+    .el-dialog
+        width: 80%
+        margin-top: 60px !important
+    .el-dialog__body
+        max-height: 420px
+        overflow: auto
+    
+    .collection-container 
+        height: 120px
+        width: 120px
+        position: relative
+        flex: 0 0 150px
+        margin-bottom: 30px
+
+        .collection 
+            height: 100%
+            width: 100%
+            margin: 0 2px
+            background-size: cover
+            background-position: center
+            color: white
+            text-align: center
+            text-transform: uppercase
+            font-size: 26px
+            padding-bottom: 20px
+            border-radius: 8px
+            box-shadow: 1px 1px 20px rgba(0,0,0,.1)
+            cursor: pointer
+            overflow: hidden
+            position: relative
+    
+            img 
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                object-fit: cover
+                transition: all .3s
+    
+                &:hover
+                    transform: scale(1.1)
     .left-section
         background: #2D2D2D
         display: flex
@@ -18,6 +60,7 @@
                     width: 244px
                     height: 244px
                     margin: 10px
+                    cursor: pointer
 
             .images-small
                 text-align: center
@@ -26,6 +69,7 @@
                     width: 114px
                     height: 114px
                     margin: 10px
+                    cursor: pointer
 
 
     .right-section
@@ -133,9 +177,14 @@
                 bottom: 0
 
             .sections-price
-                padding: 0px 0px 0px 20px
+                padding: 0
+                margin-bottom: 20
                 @extend .flex-center
                 justify-content: flex-start
+                div
+                    @media(max-width: 544px)
+                        margin: 0 auto
+                        text-align: center
                 h6
                     position: relative
                     color: #292929
@@ -153,6 +202,9 @@
                         left: 0
                         border-bottom: 1px solid #DDDDDD
                         width: 40px
+                        @media(max-width: 544px)
+                            left: 50%
+                            transform: translate(-50%, -50%)
                 p
                     color: #292929
                     font-size: 36px
@@ -221,8 +273,11 @@
 
                         &:hover
                             opacity: 0.9
-
-
+   
+            
+            
+        
+    
 
 
 

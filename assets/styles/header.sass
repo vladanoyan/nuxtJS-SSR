@@ -364,18 +364,24 @@ nav.navbar
             @media (max-width: 544px)
                 display: block
                 position: fixed
-                background: #fff
-                bottom: 30px
+                background: $gold
+                bottom: 20px
                 right: 20px
                 border-radius: 50%
                 z-index: 99
                 box-shadow: 1px 1px 20px rgba(0,0,0,.3)
                 a
                     display: block
+                    width: 64px
+                    height: 64px
                     padding: 10px
-                    img
-                        width: 100%
-                        max-width: 35px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    font-size: 26px
+                    color: #fff
+                    transform: rotate(90deg)
+                
 
         .contact-number
             @extend .flex-center
