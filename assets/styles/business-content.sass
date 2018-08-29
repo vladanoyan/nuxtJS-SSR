@@ -1,0 +1,340 @@
+.business-content
+    .left-section
+        background: #2D2D2D
+        display: flex
+        justify-content: center
+        align-content: center
+        padding: 65px 10px
+        position: relative
+
+        .portfolio
+            float: right
+
+            .images-big
+                margin: 0 auto
+                text-align: center
+                @media(min-width: 417px)
+                    float: left
+                img
+                    border-radius: 15px
+                    width: 382px
+                    height: auto
+                    margin: 10px
+
+        .side-bar
+            position: absolute
+            top: 50%
+            right: 0
+            transform: translate(0%, -50%)
+            a
+                text-transform: uppercase
+                color: rgba(255, 255, 255, 0.41)
+                font-size: 14px
+                letter-spacing: 5px
+                margin-left: 22px
+
+                &[data-active="true"]
+                    color: #fff
+                    font-size: 14px
+                    margin: 10px 0
+                    letter-spacing: 5px
+                    position: relative
+                    margin-left: 20px
+                    display: block
+                    text-transform: uppercase
+                    @extend .transition
+
+                    &:hover
+                        color: rgba(255, 255, 255, 0.71)
+
+                    &:before
+                        content: ""
+                        width: 40px
+                        border: .5px solid $gold
+                        position: absolute
+                        top: 50%
+                        transform: translate(-50%,-50%)
+                        left: -28px
+
+
+
+    .right-section
+        background: #262626
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        padding: 65px
+
+        .about
+
+            h5
+                position: relative
+                color: $gold
+                font-size: 18px
+                margin-bottom: 30px
+                text-transform: uppercase
+                letter-spacing: 5px
+
+                &:before
+                    content: ""
+                    position: absolute
+                    bottom: -15px
+                    left: 0
+                    border-bottom: 1px solid $gold
+                    width: 40px
+            p
+                color: rgba(255, 255, 255, 0.8)
+                font-size: 14px
+                margin: 0
+                font-family: 'Avenir Book', sans-serif
+
+        .view-all
+            width: 145px
+            height: 48px
+            position: relative
+            border: 1px solid $gold
+            margin-top: 50px
+            top: 0
+            @extend .flex-center
+            @extend .transition
+
+            &:hover
+                top: 2px
+
+            &:after
+                content: ""
+                width: 145px
+                height: 48px
+                position: absolute
+                bottom: -5px
+                left: 3px
+                border: 1px solid $gold
+                z-index: 1
+
+            a
+                width: 100%
+                height: 100%
+                z-index: 10
+                background: #262626
+                color: $white
+                font-size: 13px
+                font-weight: 100
+                font-family: 'Avenir Book', sans-serif
+                @extend .transition
+                @extend .flex-center
+
+                &:hover
+                    opacity: 0.9
+
+
+    .invoice-list
+        padding: 60px 15px
+        position: relative
+        .backgrong-png
+            position: absolute
+            width: 100%
+            max-width: 305px
+            left: 0
+            bottom: 0
+            transform: scaleX(-1)
+            filter: FlipH
+        .title
+            h5
+                position: relative
+                color: $gold
+                font-size: 18px
+                margin-bottom: 10px
+                text-transform: uppercase
+                letter-spacing: 5px
+                display: inline-block
+
+                &:before
+                    content: ""
+                    position: absolute
+                    bottom: -15px
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    border-bottom: 1px solid $gold
+                    width: 40px
+
+        .list-items
+            padding: 60px 0
+            .left-setion-text
+                h6
+                    position: relative
+                    color: #292929
+                    font-size: 18px
+                    margin-bottom: 10px
+                    display: inline-block
+
+                    &:before
+                        content: ""
+                        position: absolute
+                        bottom: -15px
+                        left: 0
+                        border-bottom: 1px solid #DDDDDD
+                        width: 40px
+                p
+                    color: #6E6E6E
+                    font-size: 14px
+                    margin: 10px 0
+                    font-family: 'Avenir Book', sans-serif
+                    font-weight: 100
+                    line-height: 25px
+
+            .img-mac
+                width: 100%
+                margin: 0 auto
+                max-width: 380px
+                max-height: 360px
+                object-fit: cover
+
+
+
+    .plan
+        background: url("../../assets/img/payrepair.png")
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        padding: 90px 0
+        .center-logo
+            width: 100%
+            height: 80px
+            margin: 20px auto
+            border: 1px solid $gold
+            position: relative
+            border-top: none
+            top: 50px
+            @extend .flex-center
+
+            &:before
+                border-top: 1px solid #BC9569
+                content: ''
+                position: absolute
+                top: 0
+                width: 7%
+                left: 0
+
+                @media (min-width: 675px)
+                    width: 20%
+
+            &:after
+                border-top: 1px solid #BC9569
+                content: ''
+                position: absolute
+                top: 0
+                width: 7%
+                right: 0
+
+                @media (min-width: 675px)
+                    width: 20%
+
+            span
+                color: #fff
+                letter-spacing: 5px
+                font-size: 15px
+                position: absolute
+                width: 100%
+                text-align: center
+                top: -11px
+
+                @media (min-width: 470px)
+                    width: 75%
+                    font-size: 18px
+                    top: -15px
+
+
+        .form-section
+            text-align: center
+            width: 100%
+            max-width: 1140px
+            margin: 0 auto
+            .title
+                margin-bottom: 50px
+                text-align: center
+                h5
+                    position: relative
+                    color: $gold
+                    font-size: 18px
+                    margin-bottom: 30px
+                    text-transform: uppercase
+                    letter-spacing: 5px
+
+                    &:before
+                        content: ""
+                        position: absolute
+                        bottom: -15px
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                        border-bottom: 1px solid $gold
+                        width: 40px
+                p
+                    color: rgba(255, 255, 255, 0.7)
+                    font-size: 14px
+                    margin: 0
+                    font-family: 'Avenir Book', sans-serif
+            form
+                display: flex
+                justify-content: space-evenly
+                flex-wrap: wrap
+                max-width: 75%
+                margin: 0 auto
+        .plan-section
+            .title-section
+                background: #262626
+                width: 100%
+                padding: 25px 0
+                h5
+                    position: relative
+                    color: #ffffff
+                    font-size: 18px
+                    margin-bottom: 10px
+                    text-transform: uppercase
+                    display: inline-block
+                    letter-spacing: 5px
+                    font-weight: 500
+
+                    &:before
+                        content: ""
+                        position: absolute
+                        bottom: -10px
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                        border-bottom: 1px solid $gold
+                        width: 40px
+                p
+                        color: rgb(255, 255, 255)
+                        font-size: 18px
+                        margin: 10px  0
+                        font-weight: 100
+                        font-family: 'Avenir Book', sans-serif
+            .plan-body
+                background: rgba(38, 38, 38, 0.86)
+                height: 310px
+                margin-bottom: 30px
+                ul
+                    margin: 0
+                    padding: 20px 0px 2px 50px
+                    text-align: left
+                    list-style-type: disc
+                    color: #ffffff
+                    li
+                        margin-bottom: 10px
+                        a
+                            color: #fff
+                            font-size: 14px
+                            font-weight: 100
+                            font-family: 'Avenir Book', sans-serif
+                            @extend .transition
+
+                            &:hover
+                                opacity: .7
+
+
+
+
+
+
+
+
+

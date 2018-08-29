@@ -1,0 +1,94 @@
+body
+    font-family: 'Avenir', Helvetica, Arial, sans-serif
+
+    &.no-scroll
+        overflow: hidden
+#__nuxt
+    overflow: hidden
+.form-control:focus, button:focus
+    outline: 0
+    box-shadow: none
+
+ul
+    list-style-type: none
+    padding: 0
+    margin: 0
+
+.transition
+    transition:  all 0.5s
+
+.flex-center
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+.input
+    border: 1px solid $gold
+    color: rgba(255, 255, 255, 0.81)
+    font-size: 14px
+    background: transparent
+    width: 285px
+    height: 48px
+    border-radius: 0
+    border-color: $gold !important
+
+    &:focus
+        border-color: $gold !important
+        box-shadow: none
+        outline: 0
+        background: transparent
+        color: rgba(255, 255, 255, 0.81)
+        box-shadow: none !important
+a, a:hover, button
+    @extend .transition
+    text-decoration: none
+
+h1
+    font-family: 'Avenir', sans-serif
+
+    @media (max-width: 767px)
+        font-size: 26px !important
+
+.decor-button
+    width: 145px
+    height: 48px
+    position: relative
+    border: 1px solid $gold
+    top: 0
+    @extend .flex-center
+    @extend .transition
+
+    &:hover
+        top: 2px
+
+    &:after
+        content: ""
+        width: 145px
+        height: 48px
+        position: absolute
+        bottom: -5px
+        left: 3px
+        border: 1px solid $gold
+        z-index: 1
+
+    button, a
+        width: 100%
+        height: 100%
+        z-index: 10
+        background: #262626
+        color: $white
+        font-size: 13px
+        font-weight: 100
+        font-family: 'Avenir Book', sans-serif
+        border: none
+        @extend .transition
+        @extend .flex-center
+
+        &:hover
+            opacity: 0.9
+.rc-anchor-normal-footer
+    width: 66px
+    .rc-anchor-logo-portrait
+        margin: 10px 0 0 0px !important
+    .rc-anchor-pt
+        margin: 2px 39px 0 0 !important

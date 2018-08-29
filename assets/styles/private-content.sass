@@ -1,0 +1,232 @@
+.private-content
+    .left-section
+        background: #2D2D2D
+        display: flex
+        justify-content: center
+        align-content: center
+        padding: 65px 10px
+        .portfolio
+            float: right
+
+            .images-big
+                margin: 0 auto
+                text-align: center
+                @media(min-width: 417px)
+                    float: left
+                img
+                    border-radius: 15px
+                    width: 244px
+                    height: 244px
+                    margin: 10px
+
+            .images-small
+                text-align: center
+                img
+                    border-radius: 15px
+                    width: 114px
+                    height: 114px
+                    margin: 10px
+
+
+    .right-section
+        background: #262626
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        padding: 65px
+
+        .about
+
+            h5
+                position: relative
+                color: $gold
+                font-size: 18px
+                margin-bottom: 30px
+                text-transform: uppercase
+                letter-spacing: 5px
+
+                &:before
+                    content: ""
+                    position: absolute
+                    bottom: -15px
+                    left: 0
+                    border-bottom: 1px solid $gold
+                    width: 40px
+            p
+                color: rgba(255, 255, 255, 0.8)
+                font-size: 14px
+                margin: 0
+                font-family: 'Avenir Book', sans-serif
+
+        .view-all
+            width: 145px
+            height: 48px
+            position: relative
+            border: 1px solid $gold
+            margin-top: 50px
+            top: 0
+            @extend .flex-center
+            @extend .transition
+
+            &:hover
+                top: 2px
+
+            &:after
+                content: ""
+                width: 145px
+                height: 48px
+                position: absolute
+                bottom: -5px
+                left: 3px
+                border: 1px solid $gold
+                z-index: 1
+
+            a
+                width: 100%
+                height: 100%
+                z-index: 10
+                background: #262626
+                color: $white
+                font-size: 13px
+                font-weight: 100
+                font-family: 'Avenir Book', sans-serif
+                @extend .transition
+                @extend .flex-center
+
+                &:hover
+                    opacity: 0.9
+
+
+    .price-list
+        padding: 60px 15px
+        position: relative
+        .title
+            h5
+                position: relative
+                color: $gold
+                font-size: 18px
+                margin-bottom: 10px
+                text-transform: uppercase
+                letter-spacing: 5px
+                display: inline-block
+
+                &:before
+                    content: ""
+                    position: absolute
+                    bottom: -15px
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    border-bottom: 1px solid $gold
+                    width: 40px
+            p
+                color: #292929
+                font-size: 14px
+                margin: 10px 0
+                font-family: 'Avenir Book', sans-serif
+        .list-items
+            padding: 60px 0
+            .backgrong-png
+                position: absolute
+                width: 100%
+                max-width: 305px
+                right: 0
+                bottom: 0
+
+            .sections-price
+                padding: 0px 0px 0px 20px
+                @extend .flex-center
+                justify-content: flex-start
+                h6
+                    position: relative
+                    color: #292929
+                    font-size: 16px
+                    margin: 10px 0
+                    text-transform: capitalize
+                    display: inline-block
+                    font-family: 'Avenir Book', sans-serif
+                    width: 100%
+
+                    &:before
+                        content: ""
+                        position: absolute
+                        bottom: -15px
+                        left: 0
+                        border-bottom: 1px solid #DDDDDD
+                        width: 40px
+                p
+                    color: #292929
+                    font-size: 36px
+                    margin: 10px 0
+                    font-family: 'Avenir Book', sans-serif
+                    font-weight: 100
+                img
+                    width: 35px
+
+    .pay-repair
+        background: url("../../assets/img/payrepair.png")
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        padding: 90px 0
+        .form-section
+            text-align: center
+            width: 100%
+            background: rgba(38, 38, 38, 0.9)
+            max-width: 1140px
+            margin: 0 auto
+            padding: 60px 0
+            .title
+                margin-bottom: 50px
+                text-align: center
+                h5
+                    position: relative
+                    color: $gold
+                    font-size: 18px
+                    margin-bottom: 30px
+                    text-transform: uppercase
+                    letter-spacing: 5px
+
+                    &:before
+                        content: ""
+                        position: absolute
+                        bottom: -15px
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                        border-bottom: 1px solid $gold
+                        width: 40px
+                p
+                    color: rgba(255, 255, 255, 0.7)
+                    font-size: 14px
+                    margin: 0
+                    font-family: 'Avenir Book', sans-serif
+            form
+                display: flex
+                justify-content: space-evenly
+                flex-wrap: wrap
+                max-width: 75%
+                margin: 0 auto
+                .pay-rep
+                    button
+                        width: 100%
+                        height: 100%
+                        z-index: 10
+                        background: #262626
+                        color: $white
+                        font-size: 13px
+                        font-weight: 100
+                        font-family: 'Avenir Book', sans-serif
+                        border: none
+                        @extend .transition
+                        @extend .flex-center
+
+                        &:hover
+                            opacity: 0.9
+
+
+
+
+
+
+
+
+
